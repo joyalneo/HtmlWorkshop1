@@ -15,34 +15,35 @@
     <div class="main">
         <div class="sub-top-nav">
             <div class="sub-top-nav-content">
-                <a><img src="assets/phone.svg" width="auto" height="20" alt="phone" />Download App</a>
+                <a><img src="assets/phone.svg" width="auto" height="14" alt="phone" />Download App</a>
                 <a id="border">Blog</a>
                 <a id="sub-top-nav-language"><small>Language:</small> &nbsp;English<i class="fa fa-sort-down"
                         id="sub-top-nav-down"></i></a>
             </div>
         </div>
 
-        <div class="top-nav">
+        <header class="top-nav">
             <div class="top-nav-header">
                 <img src="assets/logo.svg" width="250" height="auto" alt="logo"></img>
             </div>
-            <div class="top-nav-right-contents">
+            <nav class="top-nav-right-contents">
                 <div class="search">
-                    <input type="text" class="searchTerm" placeholder="🔍 &nbsp;Search all mutual funds">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                    <input type="text" placeholder="Search all mutual funds">
                 </div>
                 <a>Learn with fund guru</a>
                 <a>Explore funds</a>
                 <a>Ask the Expert</a>
                 <a id="bold">Login/Register</a>
-            </div>
+            </nav>
             <div class="mobile-nav">
                 <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
             </div>
-        </div>
+        </header>
 
         <div class="homepage-container">
             <div class="homepage-container-left">
-                <h1>Invest made <strong>Easy</strong><br />for you</h1>
+                <h1>Invest made <span class="underline"><strong>Easy</strong><div></div></span><br />for you</h1>
                 <div class="homepage-caption-desc">
                     <p>India's fastest growing investment platform with <strong>20 Lac+ users</strong>. We use
                         edge-cutting tchnology to ensure that your personal information is fully encrypted and seurely
@@ -54,7 +55,7 @@
                 </div>
             </div>
             <div class="homepage-container-right">
-                <img src="assets/banner1.jpg" width="600" height="auto" alt="banner1"></img>
+                <img src="assets/banner1.jpg" alt="banner1"></img>
             </div>
         </div>
 
@@ -98,15 +99,15 @@
             <div class="ask-expert-left-container">
                 <h2>Ask the Expert</h2>
                 <h5>You can schedule a meeting with an expensive manager</h5>
-                <div class="about-left-sub-container">
-                    <div class="about-sub-container">
-                        <img src="assets/cash.svg" width="50" height="auto" alt="cash" />
+                <div class="ask-expert-left-sub-container">
+                    <div class="ask-expert-sub-container">
+                        <img src="assets/cash.svg" width="24" height="auto" alt="cash" />
                         <h2>Investing made easy</h2>
                         <h5>Three simple options- cautions, balanced, adventurous. Expect will take care of rest</h5>
                         <button class="homepage-button"><span>Invest Now</span></button>
                     </div>
-                    <div class="about-sub-container">
-                        <img src="assets/Schedule.svg" width="50" height="auto" alt="cash" />
+                    <div class="ask-expert-sub-container">
+                        <img src="assets/Schedule.svg" width="24" height="auto" alt="cash" />
                         <h2>Schedule a meeting</h2>
                         <h5>Three simple options- cautions, balanced, adventurous. Expect will take care of rest</h5>
                         <button class="homepage-button"><span>Schedule Now</span></button>
@@ -136,6 +137,7 @@
                     <img src="assets/logo.svg" width="300" height="auto" alt="logo" />
                 </div>
                 <div class="footer-right-container">
+                    
                     <div class="footer-right-top-container">
                         <div class="footer-list-sub-container">
                             <p>Quick Links</p>
@@ -164,6 +166,36 @@
                             </ul>
                         </div>
                     </div>
+                    
+                    <div class="footer-right-dropdown-container">
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn" name="myDropdown1"><span>Quick Links</span><i class="fa fa-plus" aria-hidden="true"></i></button>
+                            <div id="myDropdown1" class="dropdown-content">
+                                <a>Explore Funds</a>
+                                <a>Direact Mutual Funds</a>
+                                <a>Loan Pass</a>
+                                <a>Personal Loan</a>
+                            </div>
+                          </div>
+                          <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn" name="myDropdown2"><span>Top Funded Houses</span><i class="fa fa-plus" aria-hidden="true"></i></button>
+                            <div id="myDropdown2" class="dropdown-content">
+                                <a>SBI Mutual Funds</a>
+                                <a>HDFC Mutual Funds</a>
+                                <a>Reliance Mutual Funds</a>
+                                <a>L&T Mutual Funds</a>
+                            </div>
+                          </div>
+                          <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn" name="myDropdown3"><span>Resurces</span><i class="fa fa-plus" aria-hidden="true"></i></button>
+                            <div id="myDropdown3" class="dropdown-content">
+                                <a>Calculators</a>
+                                <a>Begginer's guide</a>
+                                <a>Sitemap</a>
+                            </div>
+                          </div>
+                    </div>
+                    
                     <div class="footer-right-bottom-container">
                         <div class="footer-list-sub-container">
                             <p>Write to us at</p>
@@ -201,5 +233,26 @@
 
     </div>
 </body>
+
+<script>
+    
+    function myFunction() {
+        console.log(event.target.name);
+      document.getElementById(event.target.name).classList.toggle("show");
+    }
+    
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    </script>
 
 </html>
