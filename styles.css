@@ -76,7 +76,7 @@
     width: 240px;
     height: 42px;
     border: none;
-    background-color: #f5f5f5;
+    background-color: #F5F5F5;
     padding: 15px;
     border-radius: 5px;
     display: flex;
@@ -121,6 +121,7 @@
     width: 50%;
     padding-left: 150px;
     gap: 30px;
+    margin-bottom: 50px;
 }
 
 .homepage-container-left h1 {
@@ -141,7 +142,7 @@
 
 .homepage-button {
     background-color: #00e1a0;
-    border: none;
+    border: 1px solid #00e1a0;
     color: #FFFFFF;
     padding: 15px 32px!important;
     text-align: center;
@@ -156,6 +157,11 @@
     font-weight: bold;
 }
 
+.homepage-button:hover {
+    background-color: white;
+    color: #00e1a0;
+}
+
 .homepage-container-right {
     width: 50%;
     margin-top: 20px;
@@ -165,8 +171,8 @@
     align-items: center;
 }
 
-.homepage-container-right img{
-    width: 60%;
+.homepage-container-right img {
+    width: 30vw;
     height: auto;
 }
 
@@ -175,11 +181,11 @@
     margin-left: 10px;
 }
 
-.underline div{
+.underline div {
     position: relative;
     border-bottom: 10px solid;
-    width: 110px;
-    color:#acf8e2;
+    width: 90px;
+    color: #acf8e2;
     z-index: -1;
     bottom: 15px;
 }
@@ -187,37 +193,58 @@
 .registration-container {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     width: 100%;
     background-color: #d3ebe4;
     margin-bottom: 100px;
+    padding: 40px 0;
+    /* gap: 50px; */
 }
 
 .registration-captions-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 150px;
+    padding-left: 10%;
+    min-width: 700px;
     gap: 50px;
     width: 50%;
+    /* margin-top: 100px; */
 }
 
 .registration-image-container {
-    padding: 80px 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 50%;
-    gap: 150px;
+    gap: 15%;
+}
+
+.registration-image-sub-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.registration-image-sub-container div {
+    color: #222222;
+    font-size: 14px;
+    opacity: 70%;
 }
 
 .registration-captions-container h2 {
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .registration-captions-container h5 {
-    font-size: 20px;
+    font-size: 17px;
+    color: #222222;
+    opacity: 70%;
     width: 70%;
     font-weight: normal;
 }
@@ -236,11 +263,6 @@
     width: 50%;
 }
 
-.ask-expert-right-container img {
-    width: 70%;
-    height: auto;
-}
-
 .about-left-container {
     width: 50%;
     display: flex;
@@ -251,7 +273,9 @@
 }
 
 .about-left-container h4 {
-    font-size: 20px;
+    font-size: 17px;
+    color: #222222;
+    opacity: 70%;
     font-weight: normal;
 }
 
@@ -268,10 +292,11 @@
 .about-button-container {
     display: flex;
     flex-direction: row;
+    gap: 50px;
 }
 
 .about-button {
-    border: none;
+    /* border: none; */
     padding: 15px 32px!important;
     text-align: center;
     -webkit-transition-duration: 0.4s;
@@ -282,16 +307,28 @@
     border-radius: 8px;
     margin-top: 20px;
     font-weight: bold;
+    width: 250px;
     background-color: white;
 }
 
+#know-more:hover {
+    background-color: white;
+    color: #00e1a0;
+}
+
+#watch-video:hover {
+    background-color: #00e1a0;
+    color: white;
+}
+
 #know-more {
-    width: 220px;
+    border: 1px solid #00e1a0;
     background-color: #00e1a0;
     color: white;
 }
 
 #watch-video {
+    border: none;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -301,6 +338,7 @@
 }
 
 .ask-expert-container {
+    padding-top: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -316,7 +354,7 @@
     justify-content: space-around;
     width: 572px;
     margin-left: 50px;
-    gap: 50px;
+    gap: 30px;
 }
 
 .ask-expert-left-container h2 {
@@ -329,7 +367,7 @@
     font-weight: normal;
 }
 
-.ask-expert-left-sub-container{
+.ask-expert-left-sub-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -341,7 +379,7 @@
 .ask-expert-sub-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 349px;
     width: 260px;
 }
@@ -352,7 +390,7 @@
 
 .ask-expert-left-sub-container h5 {
     font-size: 17px;
-    line-height:29px;
+    line-height: 29px;
 }
 
 .ask-expert-right-container {
@@ -360,7 +398,7 @@
     flex-direction: row;
     justify-content: center;
     width: 50%;
-    height: auto;   
+    height: auto;
 }
 
 .ask-expert-right-container img {
@@ -382,16 +420,19 @@
 }
 
 .download-app-container h2 {
-    font-size: 40px;
+    font-size: 30px;
 }
 
 .download-app-container h5 {
-    font-size: 20px;
+    font-size: 17px;
+    color: #222222;
+    opacity: 70%;
+    width: 414px;
     font-weight: normal;
 }
 
 .download-app-container h3 {
-    font-size: 30px;
+    font-size: 23px;
 }
 
 #download-chat {
@@ -399,6 +440,11 @@
     right: 0;
     margin-right: 100px;
     margin-top: 200px;
+}
+
+.download-app-image-container img:hover {
+    cursor: pointer;
+    opacity: 80%;
 }
 
 .footer-container {
@@ -409,7 +455,7 @@
 .footer-sub-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding-bottom: 50px;
     flex-wrap: wrap;
@@ -417,7 +463,7 @@
 
 .footer-left-container {
     margin-top: 50px;
-    margin-left: 200px;
+    margin-left: 5%;
     margin-bottom: 50px;
 }
 
@@ -432,7 +478,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap:50px;
+    gap: 50px;
 }
 
 .footer-right-bottom-container {
@@ -444,7 +490,7 @@
 
 .footer-list-sub-container {
     width: 200px;
-    margin-right: 100px;
+    margin-right: 50px;
 }
 
 ul.no-bullets {
@@ -456,6 +502,21 @@ ul.no-bullets {
 
 .no-bullets li {
     margin-top: 15px;
+}
+
+.no-bullets li:hover {
+    cursor: pointer;
+    opacity: 80%;
+}
+
+.footer-download-icons img:hover {
+    cursor: pointer;
+    opacity: 80%;
+}
+
+.footer-bottom-container img:hover {
+    cursor: pointer;
+    opacity: 80%;
 }
 
 .footer-list-sub-container p {
@@ -491,9 +552,9 @@ ul.no-bullets {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid #cecece;
+    border: 1px solid #F0F0F0;
     background-color: white;
-    width: 80%;
+    width: 95%;
     padding: 25px;
     font-size: 16px;
     cursor: pointer;
@@ -502,7 +563,8 @@ ul.no-bullets {
 }
 
 .dropbtn i {
-    color: rgb(75, 75, 75);
+    color: #222222;
+    opacity: 40%;
     font-weight: normal;
 }
 
@@ -513,13 +575,13 @@ ul.no-bullets {
 
 .dropdown-content {
     display: none;
-    position: absolute;
+    /* position: absolute; */
     background-color: #f1f1f1;
     min-width: 160px;
-    overflow:auto;
+    overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-    width: 80%;
+    width: 95%;
 }
 
 .dropdown-content a {
@@ -527,6 +589,11 @@ ul.no-bullets {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+}
+
+.dropdown-content a:hover {
+    cursor: pointer;
+    opacity: 80%;
 }
 
 .dropdown a:hover {
@@ -585,30 +652,16 @@ ul.no-bullets {
     }
 }
 
-@media only screen and (max-width:1330px) {
+@media only screen and (max-width:1400px) {
     .registration-container {
         padding-top: 50px;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        gap: 50px;
     }
     .registration-captions-container {
-        width: 400px;
+        min-width: 400px;
         padding-left: 0;
     }
-    .registration-captions-container h2 {
-        width: 400px;
-    }
-    .registration-captions-container h5 {
-        width: 400px;
-    }
-    .registration-image-container {
-        width: 400px;
-        justify-content: space-between;
-        gap: 0;
-    }
 }
-
 
 @media only screen and (max-width:760px) {
     .about-left-sub-container {
@@ -621,11 +674,9 @@ ul.no-bullets {
         margin-top: -20px;
         margin-bottom: -20px;
     }
-
     .footer-left-container {
-        margin-left:0;
+        margin-left: 0;
     }
-
     .footer-bottom-container {
         gap: 30px;
         padding: 30px 0;
