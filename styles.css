@@ -138,7 +138,7 @@
 }
 
 .homepage-caption-desc {
-    width: 455px;
+    width: 400px;
     font-size: 17px;
     line-height: 29px;
     font-weight: normal;
@@ -196,6 +196,23 @@
     bottom: 15px;
 }
 
+@media only screen and (max-width:400px) {
+    .homepage-container-left h1 {
+        font-size: 35px;
+    }
+    .homepage-caption-desc {
+        font-size:15px;
+        width: 300px;
+    }
+    .homepage-container-left {
+        margin-left: 10px;
+    }
+    .homepage-button {
+        width: 180px;
+        font-size: 15px;
+    }
+}
+
 .registration-container {
     display: flex;
     flex-direction: row;
@@ -206,27 +223,26 @@
     background-color: #d3ebe4;
     margin-bottom: 100px;
     padding: 40px 0;
-    /* gap: 50px; */
 }
 
 .registration-captions-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 10%;
-    min-width: 700px;
+    padding-left: 150px;
+    padding-right: 40px;
+    min-width: 535px;
     gap: 50px;
     width: 50%;
-    /* margin-top: 100px; */
 }
 
 .registration-image-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 50%;
-    gap: 15%;
+    padding-right: 150px;
 }
 
 .registration-image-sub-container {
@@ -255,8 +271,31 @@
     font-size: 17px;
     color: #222222;
     opacity: 70%;
-    width: 70%;
     font-weight: normal;
+    max-width: 500px;
+}
+
+@media only screen and (max-width:1080px) {
+    .registration-captions-container{
+        padding-left: 0;
+        min-width: 90%;
+    }
+    .registration-image-container{
+        margin-top: 50px;
+        padding-right: 0;
+    }
+    .registration-captions-container h5 {
+        padding-right: 0;
+    }
+}
+
+@media only screen and (max-width:570px) {
+    .registration-captions-container {
+        width: 90%
+    }
+    .registration-image-container {
+        width: 90%;
+    }
 }
 
 .about-mutual-funds-container {
@@ -279,6 +318,7 @@
     flex-direction: column;
     justify-content: center;
     padding-left: 50px;
+    padding-top: 50px;
     gap: 20px;
 }
 
@@ -306,8 +346,7 @@
 }
 
 .about-button {
-    /* border: none; */
-    padding: 15px 32px!important;
+    padding: 15px 32px;
     text-align: center;
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
@@ -346,6 +385,33 @@
     color: #00e1a0;
     gap: 20px;
 }
+
+.about-right-container img {
+    width: 70%;
+}
+
+@media only screen and (max-width:700px) {
+    .about-left-container {
+        width: 90%;
+        padding-bottom: 50px;
+    }
+    .about-caption2 {
+        font-size: 30px;
+    }
+    .about-left-container h4 {
+        font-size: 14px;
+    }
+    .about-button {
+        width: 120px;
+        font-size: 15px;
+        padding: 8px 10px;
+    }
+    .about-button-container {
+        gap: 0;
+        justify-content: space-around;
+    }
+}
+
 
 .ask-expert-container {
     padding-top: 50px;
@@ -417,6 +483,13 @@
     height: auto;
 }
 
+@media only screen and (max-width:700px)
+{
+    .ask-expert-left-container {
+        width: 80%;
+    }
+}
+
 .download-app-container {
     position: relative;
     display: flex;
@@ -455,6 +528,17 @@
 .download-app-image-container img:hover {
     cursor: pointer;
     opacity: 80%;
+}
+
+@media only screen and (max-width:700px)
+{
+    .download-app-container h5 {
+        width: 80%;
+    }
+
+    .download-app-container {
+        gap: 30px;
+    }
 }
 
 .footer-container {
@@ -585,7 +669,6 @@ ul.no-bullets {
 
 .dropdown-content {
     display: none;
-    /* position: absolute; */
     background-color: #f1f1f1;
     min-width: 160px;
     overflow: auto;
@@ -630,7 +713,7 @@ ul.no-bullets {
     .mobile-nav {
         font-size: 30px;
         display: flex;
-        margin-right: 50px;
+        margin-right: 20px;
     }
     .homepage-container {
         justify-content: center;
@@ -640,9 +723,7 @@ ul.no-bullets {
         width: 400px;
         padding-left: 0;
     }
-    .homepage-caption-desc {
-        width: 400px;
-    }
+
     .homepage-container-right {
         display: none;
     }
@@ -651,7 +732,6 @@ ul.no-bullets {
         align-items: center;
     }
     .about-left-container {
-        width: 400px;
         padding-left: 0;
     }
 }
@@ -662,16 +742,6 @@ ul.no-bullets {
     }
 }
 
-@media only screen and (max-width:1400px) {
-    .registration-container {
-        padding-top: 50px;
-        gap: 50px;
-    }
-    .registration-captions-container {
-        min-width: 400px;
-        padding-left: 0;
-    }
-}
 
 @media only screen and (max-width:760px) {
     .about-left-sub-container {
