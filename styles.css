@@ -20,7 +20,7 @@
     align-items: center;
     height: 100%;
     margin-left: auto;
-    margin-right: 100px;
+    margin-right: 150px;
 }
 
 .sub-top-nav-content a {
@@ -69,7 +69,7 @@
     justify-content: center;
     align-items: center;
     float: right;
-    margin-right: 100px;
+    margin-right: 150px;
     font-size: 14px;
 }
 
@@ -123,6 +123,7 @@
     margin-top: 100px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 50%;
     padding-left: 150px;
     gap: 30px;
@@ -170,15 +171,16 @@
 
 .homepage-container-right {
     width: 50%;
-    margin-top: 20px;
-    margin-bottom: 80px;
+    margin-top: 100px;
+    margin-bottom: 100px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
+    padding-right: 150px;
 }
 
 .homepage-container-right img {
-    width: 30vw;
+    width: 35vw;
     height: auto;
 }
 
@@ -422,6 +424,7 @@
     flex-wrap: wrap;
     margin-top: 50px;
     background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, white 0%, #e7fcf6 100%);
+    padding: 0 150px;
 }
 
 .ask-expert-left-container {
@@ -429,7 +432,6 @@
     flex-direction: column;
     justify-content: space-around;
     width: 572px;
-    margin-left: 50px;
     gap: 30px;
 }
 
@@ -472,14 +474,14 @@
 .ask-expert-right-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-end;
     width: 50%;
     height: auto;
+    padding: 100px 0;
 }
 
 .ask-expert-right-container img {
-    padding: 50px;
-    width: 70%;
+    width: 85%;
     height: auto;
 }
 
@@ -487,6 +489,10 @@
 {
     .ask-expert-left-container {
         width: 80%;
+    }
+    .ask-expert-container {
+        padding:0;
+        padding-top: 50px;
     }
 }
 
@@ -758,8 +764,19 @@ ul.no-bullets {
         margin-left: 0;
     }
     .footer-bottom-container {
-        gap: 30px;
-        padding: 30px 0;
+        gap: 20px;
+        padding: 20px 0;
+    }
+    .footer-bottom-container img {
+        height:25px;
+    }
+    .footer-bottom-container span {
+        color: #222222;
+        font-family: Avenir;
+        font-size: 12px;
+        line-height: 30px;
+        opacity: 0.699999988079071;
+        text-align: left;
     }
 }
 
