@@ -118,6 +118,7 @@
 .homepage-container {
     display: flex;
     flex-direction: row;
+    height: 90vh;
 }
 
 .homepage-container-left {
@@ -320,8 +321,9 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 50px;
-    padding-top: 50px;
+    align-items: right;
+    padding-left: 5%;
+    /* padding-top: 50px; */
     gap: 20px;
 }
 
@@ -346,6 +348,7 @@
     display: flex;
     flex-direction: row;
     gap: 50px;
+    max-width: 450px;
 }
 
 .about-button {
@@ -417,7 +420,7 @@
 
 
 .ask-expert-container {
-    padding-top: 50px;
+    /* padding-top: 50px; */
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -436,8 +439,13 @@
     gap: 10px;
 }
 
+#leftPadding {
+    padding-left: 20px;
+}
+
 .ask-expert-left-container h2 {
     font-size: 40px;
+    margin-top: 20px;
 }
 
 .ask-expert-left-container h5 {
@@ -449,7 +457,7 @@
 .ask-expert-left-sub-container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
@@ -467,6 +475,7 @@
 
 .ask-expert-left-sub-container h2 {
     font-size: 24px;
+    
 }
 
 .ask-expert-left-sub-container h5 {
@@ -493,8 +502,8 @@
         width: 100%;
     }
     .ask-expert-container {
-        padding: 0 50px;
-        padding-top: 50px;
+        /* padding: 0 50px; */
+        /* padding-top: 50px; */
     }
 }
 
@@ -503,7 +512,9 @@
     .ask-expert-left-container {
         width: 80%;
     }
-
+    #leftPadding {
+        padding-left: 0;
+    }
 }
 
 .download-app-container {
@@ -549,6 +560,10 @@
 @media only screen and (max-width:700px)
 {
     .download-app-container h5 {
+        width: 80%;
+    }
+
+    .download-app-container h2 {
         width: 80%;
     }
 
