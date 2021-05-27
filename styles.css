@@ -390,6 +390,7 @@
     align-items: center;
     color: #00e1a0;
     gap: 20px;
+    width: 80%;
 }
 
 .about-right-container img {
@@ -428,7 +429,7 @@
     flex-wrap: wrap;
     margin-top: 50px;
     background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, white 0%, #e7fcf6 100%);
-    padding: 0 5%;
+    padding: 0 8%;
 }
 
 .ask-expert-left-container {
@@ -627,16 +628,22 @@ ul.no-bullets {
 
 .no-bullets li {
     margin-top: 15px;
+    opacity: 60%;
 }
 
 .no-bullets li:hover {
     cursor: pointer;
-    opacity: 80%;
+    opacity: 100%;
 }
 
-.footer-download-icons img:hover {
+.footer-download-icons img {
     cursor: pointer;
-    opacity: 80%;
+    opacity: 60%;
+}
+
+
+.footer-download-icons img:hover {
+    opacity: 100%;
 }
 
 .footer-bottom-container img:hover {
